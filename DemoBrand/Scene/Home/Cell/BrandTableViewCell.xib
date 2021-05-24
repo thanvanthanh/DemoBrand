@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="BrandTableViewCell" customModule="DemoBrand" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_vansoffthewall" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-Lg-lea">
+                        <rect key="frame" x="11" y="11" width="133" height="133"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hGL-Lg-lea" secondAttribute="height" id="8bD-kz-Cn2"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J7W-2j-99e">
+                        <rect key="frame" x="156" y="0.0" width="187" height="161"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNV-ac-dei">
+                                <rect key="frame" x="47.5" y="0.0" width="92.5" height="53.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Founder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3B-ma-7rv">
+                                <rect key="frame" x="62" y="53.5" width="63.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTa-4V-onV">
+                                <rect key="frame" x="75" y="107.5" width="37.5" height="53.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="J7W-2j-99e" secondAttribute="trailing" id="0Jz-iL-Oyr"/>
+                    <constraint firstItem="hGL-Lg-lea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="76x-Vu-RJd"/>
+                    <constraint firstItem="hGL-Lg-lea" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Ax8-do-niI"/>
+                    <constraint firstItem="J7W-2j-99e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BKZ-DL-CNE"/>
+                    <constraint firstAttribute="bottom" secondItem="J7W-2j-99e" secondAttribute="bottom" id="DKM-Uz-cJK"/>
+                    <constraint firstItem="J7W-2j-99e" firstAttribute="leading" secondItem="hGL-Lg-lea" secondAttribute="trailing" constant="12" id="mhw-IC-nJ9"/>
+                    <constraint firstAttribute="bottom" secondItem="hGL-Lg-lea" secondAttribute="bottom" constant="17" id="rsd-IT-6US"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="founderBrand" destination="X3B-ma-7rv" id="Psh-nt-feh"/>
+                <outlet property="founderYear" destination="XTa-4V-onV" id="g2o-aw-reo"/>
+                <outlet property="logoImage" destination="hGL-Lg-lea" id="Ixx-M5-I2F"/>
+                <outlet property="nameBrand" destination="yNV-ac-dei" id="y4f-47-B9Q"/>
+            </connections>
+            <point key="canvasLocation" x="-222" y="123"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_logo_vansoffthewall" width="1440" height="585"/>
+    </resources>
+</document>
