@@ -19,6 +19,7 @@ class CreatBrandViewController: UIViewController {
     @IBOutlet var datePicker: UIDatePicker!
     let dateLabel = UILabel()
 
+    let pickYear = UIDatePicker()
     var isAddNewBrand = true
     var brandEdit: ((BrandEntity) -> Void)?
     override func viewDidLoad() {
@@ -30,11 +31,16 @@ class CreatBrandViewController: UIViewController {
     }
     func setDatePicker() {
         // set kiểu ngày tháng cho datePicker
-        datePicker.datePickerMode = .date
+        pickYear.datePickerMode = .date
+        if #available(iOS 14.0, *) {
+            pickYear.preferredDatePickerStyle = .wheels
+        } else {
+            // Fallback on earlier versions
+        }
         // gán datePicker cho textField
-        founderYear.inputView = datePicker
+        founderYear.inputView = pickYear
         // Set ngày mặc định khi hiển thị
-        datePicker.setDate(Date(), animated: true)
+        pickYear.setDate(Date(), animated: true)
         
         //  khởi tạo toolBar, toolBar.sizeToFit là các thành phần nằm trong nó tự dãn theo đúng kích thước width
         let toolBar = UIToolbar()
@@ -99,13 +105,7 @@ class CreatBrandViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-//    func validateNewBrand() -> Bool {
-//        if nameTextfield.text?.count == 0 || founderYear.text?.count == 0 || founderTextfield.text?.count == 0 || ceoTextfield.text?.count == 0 || introduceTextView.text.count == 0{
-//            print("Please input all information")
-//            return false
-//        }
-//        return true
-//    }
+    
 }
 extension CreatBrandViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

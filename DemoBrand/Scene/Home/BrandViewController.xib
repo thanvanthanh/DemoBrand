@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrandViewController" customModule="DemoBrand" customModuleProvider="target">
             <connections>
-                <outlet property="searchBar" destination="AKT-Q5-8Pi" id="sRa-9h-8RD"/>
                 <outlet property="tableView" destination="y4P-mC-6fN" id="MKU-bT-6AV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,31 +21,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y4P-mC-6fN">
-                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <searchBar contentMode="redraw" placeholder="Tìm kiếm" translatesAutoresizingMaskIntoConstraints="NO" id="AKT-Q5-8Pi">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="t9j-Xf-QIm"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="AKT-Q5-8Pi" secondAttribute="top" id="FLY-zP-zbb"/>
+                <constraint firstItem="y4P-mC-6fN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="D7s-Ep-CMl"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y4P-mC-6fN" secondAttribute="trailing" id="FVs-vo-4Sp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y4P-mC-6fN" secondAttribute="bottom" id="U7V-rr-mNy"/>
                 <constraint firstItem="y4P-mC-6fN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l6J-na-neu"/>
-                <constraint firstItem="AKT-Q5-8Pi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vux-6h-iw2"/>
-                <constraint firstItem="y4P-mC-6fN" firstAttribute="top" secondItem="AKT-Q5-8Pi" secondAttribute="bottom" id="w44-Hj-J25"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AKT-Q5-8Pi" secondAttribute="trailing" id="x2O-5i-ivd"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-212" y="96"/>
+            <point key="canvasLocation" x="-213.04347826086959" y="95.758928571428569"/>
         </view>
     </objects>
     <resources>
