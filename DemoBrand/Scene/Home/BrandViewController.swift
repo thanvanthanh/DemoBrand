@@ -88,10 +88,43 @@ extension BrandViewController : UITableViewDataSource{
 }
 extension BrandViewController : UISearchBarDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
+        filteredTableData = data.filter({ brand -> Bool in
+            switch searchBar.selectedScopeButtonIndex {
+            case 0:
+                if searchText.isEmpty { return true }
+                return brand.name!.lowercased().contains(searchText.lowercased())
+            case 1:
+                if searchText.isEmpty { return brand.name == "" }
+                return brand.name!.lowercased().contains(searchText.lowercased()) &&
+                brand.name == ""
+            case 2:
+                if searchText.isEmpty { return brand.name == "" }
+                return brand.name!.lowercased().contains(searchText.lowercased()) &&
+                    brand.name == ""
+            default:
+                return false
+            }
+        })
+        tableView.reloadData()
     }
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.endEditing(true)
+
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        switch selectedScope {
+        case 0:
+            filteredTableData = data
+        case 1:
+            filteredTableData = data.filter({ brand -> Bool in
+                brand.name == ""
+            })
+        case 2:
+            filteredTableData = data.filter({ brand -> Bool in
+                brand.name == ""
+            })
+        default:
+            break
+        }
+        tableView.reloadData()
     }
 }
+
 

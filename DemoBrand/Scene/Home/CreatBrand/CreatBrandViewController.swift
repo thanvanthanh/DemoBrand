@@ -79,7 +79,11 @@ class CreatBrandViewController: UIViewController {
     }
     
     @objc func ontapSave() {
-        (brandEdit!)(BrandEntity(logo: logoImage.image, name: nameTextfield.text, foundedYear: Int(founderYear.text ?? ""), founder: founderTextfield.text, ceo: ceoTextfield.text, introduce: introduceTextView.text))
+        (brandEdit!)(BrandEntity(logo: logoImage.image, name: nameTextfield.text,
+                                 foundedYear: Int(founderYear.text ?? ""),
+                                 founder: founderTextfield.text,
+                                 ceo: ceoTextfield.text,
+                                 introduce: introduceTextView.text))
         navigationController?.popViewController(animated: true)
     }
     func openGallery() {

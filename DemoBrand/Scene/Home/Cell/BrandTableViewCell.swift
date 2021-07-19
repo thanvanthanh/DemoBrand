@@ -10,11 +10,9 @@ import UIKit
 
 class BrandTableViewCell: UITableViewCell {
     @IBOutlet weak var logoImage: UIImageView!
-    
     @IBOutlet weak var nameBrand: UILabel!
     @IBOutlet weak var founderBrand: UILabel!
     @IBOutlet weak var founderYear: UILabel!
-    
     var brand : BrandEntity? {
         didSet{
             if let brand = brand{
