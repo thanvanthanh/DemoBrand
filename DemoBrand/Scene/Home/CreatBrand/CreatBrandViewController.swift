@@ -16,7 +16,6 @@ class CreatBrandViewController: UIViewController {
     @IBOutlet weak var ceoTextfield: UITextField!
     @IBOutlet weak var introduceTextView: UITextView!
     
-    @IBOutlet var datePicker: UIDatePicker!
     let dateLabel = UILabel()
 
     let pickYear = UIDatePicker()
@@ -59,17 +58,17 @@ class CreatBrandViewController: UIViewController {
         toolBar.setItems([cancelButton, spaceButton, label, spaceButton, doneButton], animated: false)
         
         // add hành động datepicker
-        datePicker.addTarget(self, action: #selector(valueChangeDatePicker), for: .valueChanged)
+        pickYear.addTarget(self, action: #selector(valueChangeDatePicker), for: .valueChanged)
     }
     @objc func valueChangeDatePicker() {
-        dateLabel.text = ConvertHelper.stringFromDate(date: datePicker.date, format: "dd/MM/yyyy")
+        dateLabel.text = ConvertHelper.stringFromDate(date: pickYear.date, format: "dd/MM/yyyy")
         dateLabel.sizeToFit()
     }
     @objc func cancelAction() {
         self.view.endEditing(true)
     }
     @objc func doneDateAction() {
-        founderYear.text = ConvertHelper.stringFromDate(date: datePicker.date, format: "yyyy")
+        founderYear.text = ConvertHelper.stringFromDate(date: pickYear.date, format: "yyyy")
         self.view.endEditing(true)
     }
     override func viewWillAppear(_ animated: Bool) {

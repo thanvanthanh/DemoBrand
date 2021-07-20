@@ -165,8 +165,9 @@
 				0596936A265B6A600096580F /* SceneDelegate.swift */,
 				05F65B37265BFED700BF503C /* TPKeybroard + Convert */,
 				05969380265B6A7B0096580F /* Scene */,
-				05969374265B6A620096580F /* Assets.xcassets */,
+				0575D09E265B7EAB00A1C3A7 /* Model */,
 				05969376265B6A620096580F /* LaunchScreen.storyboard */,
+				05969374265B6A620096580F /* Assets.xcassets */,
 				05969379265B6A620096580F /* Info.plist */,
 			);
 			path = DemoBrand;
@@ -188,7 +189,6 @@
 				05969382265B6A940096580F /* BrandViewController.xib */,
 				0575D0B0265B97B400A1C3A7 /* CreatBrand */,
 				0575D0A8265B86FB00A1C3A7 /* Detail */,
-				0575D09E265B7EAB00A1C3A7 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";

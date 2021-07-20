@@ -12,7 +12,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatBrandViewController" customModule="DemoBrand" customModuleProvider="target">
             <connections>
                 <outlet property="ceoTextfield" destination="1ce-x7-ibi" id="iel-B2-6np"/>
-                <outlet property="datePicker" destination="hrU-ca-kNf" id="9su-4h-5Gd"/>
                 <outlet property="founderTextfield" destination="3Nc-Fm-unG" id="1Lt-t6-gW5"/>
                 <outlet property="founderYear" destination="R6U-ll-lN6" id="f0S-jY-130"/>
                 <outlet property="introduceTextView" destination="X3y-m6-Js8" id="zg8-OP-reh"/>
@@ -308,11 +307,6 @@
             </constraints>
             <point key="canvasLocation" x="-218.40000000000001" y="152.47376311844079"/>
         </view>
-        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" id="hrU-ca-kNf">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="456" y="2"/>
-        </datePicker>
     </objects>
     <resources>
         <image name="ic_nophoto" width="540" height="540"/>
