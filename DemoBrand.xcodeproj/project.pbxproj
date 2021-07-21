@@ -94,6 +94,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05175C5D26A7A50C0065B3B6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				05969368265B6A600096580F /* AppDelegate.swift */,
+				0596936A265B6A600096580F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		05175C5E26A7A5820065B3B6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				05969389265B6FF70096580F /* Cell */,
+				05969381265B6A940096580F /* BrandViewController.swift */,
+				05969382265B6A940096580F /* BrandViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		0575D09E265B7EAB00A1C3A7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +180,8 @@
 		05969367265B6A600096580F /* DemoBrand */ = {
 			isa = PBXGroup;
 			children = (
-				05969368265B6A600096580F /* AppDelegate.swift */,
-				0596936A265B6A600096580F /* SceneDelegate.swift */,
-				05F65B37265BFED700BF503C /* TPKeybroard + Convert */,
+				05175C5D26A7A50C0065B3B6 /* Application */,
+				05F65B37265BFED700BF503C /* Utilities */,
 				05969380265B6A7B0096580F /* Scene */,
 				0575D09E265B7EAB00A1C3A7 /* Model */,
 				05969376265B6A620096580F /* LaunchScreen.storyboard */,
@@ -176,21 +194,19 @@
 		05969380265B6A7B0096580F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				05969388265B6FE70096580F /* Home */,
+				05969388265B6FE70096580F /* Scene */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		05969388265B6FE70096580F /* Home */ = {
+		05969388265B6FE70096580F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				05969389265B6FF70096580F /* Cell */,
-				05969381265B6A940096580F /* BrandViewController.swift */,
-				05969382265B6A940096580F /* BrandViewController.xib */,
+				05175C5E26A7A5820065B3B6 /* Home */,
 				0575D0B0265B97B400A1C3A7 /* CreatBrand */,
 				0575D0A8265B86FB00A1C3A7 /* Detail */,
 			);
-			path = Home;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		05969389265B6FF70096580F /* Cell */ = {
@@ -202,13 +218,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		05F65B37265BFED700BF503C /* TPKeybroard + Convert */ = {
+		05F65B37265BFED700BF503C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				05F65B34265BF69200BF503C /* ConvertHelper.swift */,
 				05F65B31265BDFB200BF503C /* TPKeyboardAvoidingSwift .swift */,
 			);
-			path = "TPKeybroard + Convert";
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
